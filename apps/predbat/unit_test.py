@@ -158,6 +158,7 @@ from tests.test_battery_full_hysteresis import (
 )
 from tests.test_manual_api import run_test_manual_api
 from tests.test_manual_soc import run_test_manual_soc
+from tests.test_manual_soc_max import run_test_manual_soc_max
 from tests.test_manual_times import run_test_manual_times
 from tests.test_manual_select import run_test_manual_select
 from tests.test_minute_array import test_minute_array
@@ -510,6 +511,7 @@ def main():
         ("units", run_test_units, "Unit tests", False),
         ("manual_api", run_test_manual_api, "Manual API tests", False),
         ("manual_soc", run_test_manual_soc, "Manual SOC target tests", False),
+        ("manual_soc_max", run_test_manual_soc_max, "Manual SOC maximum (ceiling) target tests (issue #1578)", False),
         ("manual_times", run_test_manual_times, "Manual times tests", False),
         ("manual_select", run_test_manual_select, "Manual select tests", False),
         ("web_if", run_test_web_if, "Web interface tests", False),

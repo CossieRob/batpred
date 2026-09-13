@@ -571,6 +571,7 @@ snakeviz
 snprintf
 socb
 socketloop
+socmax
 socs
 sofar
 SolarEdge
